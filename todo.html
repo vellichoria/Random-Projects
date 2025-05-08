@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do:</title>
+<style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #001D3D;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .category {
+      background: #003566;
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .category h2 {
+      border-left: 6px solid #FFD60A;
+      padding-left: 10px;
+      color: #e9e9e9;
+      font-size: 20px;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .todo-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e4e4e4;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .todo-item input[type="checkbox"]:checked {
+      background-color: #80b918;
+      border-color: #55a630;
+    }
+
+    .todo-item input[type="checkbox"]:checked::after {
+      content: '✓';
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      top: -2px;
+      left: 4px;
+    }
+
+    .todo-item label {
+      font-size: 16px;
+      color: #cccccc;
+    }
+</style>
+<body>
+    <h1>My To-do List 📝</h1>
+
+    <div class="category">
+        <h2>🏠 House Chores</h2>    <!--HERE IS HOUSE CHORES-->
+        <div class="todo-item">
+          <input type="checkbox" id="laundry">
+          <label for="laundry">Do the laundry</label>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" id="trash">
+          <label for="trash">Take out the trash</label>
+        </div>
+        <div class="todo-item">
+            <input type="checkbox" id="dishes">
+            <label for="dishes">Do the dishes</label>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" id="bedding">
+            <label for="bedding">Change Coco's bedding</label>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" id="plants">
+            <label for="plants">Water the plants</label>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" id="balcony">
+            <label for="balcony">Clean balcony</label>
+          </div>
+      </div>
+    
+      <div class="category">
+        <h2>🇫🇷 French Practice</h2>     <!--HERE IS FRENCH-->
+        <div class="todo-item">
+          <input type="checkbox" id="song">
+          <label for="song">Write one song lyric</label>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" id="movie">
+          <label for="movie">Write movie dialogues</label>
+        </div>
+        <div class="todo-item">
+            <input type="checkbox" id="grammar">
+            <label for="grammar">Study grammar</label>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" id="diary">
+            <label for="diary">Write diary entry</label>
+          </div>
+      </div>
+
+      <div class="category">
+        <h2>👩‍💻 Full Stack Development</h2>      <!--HERE IS FULL STACK-->
+        <div class="todo-item">
+            <input type="checkbox" id="study&practice">
+            <label for="study&practice">Study & Practice coding</label>
+          </div>
+      </div>
+      
+      <div class="category">
+        <h2>🟰 Mathematics</h2>     <!--HERE IS MATHS-->
+        <div class="todo-item">
+            <input type="checkbox" id="math">
+            <label for="math">Solve 20 problems</label>
+          </div>
+      </div>
+
+      <div class="category">
+        <h2>🌟 Miscellaneous</h2>   <!--HERE IS MISC-->
+        <div class="todo-item">
+          <input type="checkbox" id="chess">
+          <label for="chess">Play chess</label>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" id="read">
+          <label for="read">Read 30 pages of a book</label>
+        </div>
+      </div>
+</body>
+</html>
